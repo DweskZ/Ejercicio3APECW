@@ -1,63 +1,96 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Formulario de prueba de HTML5</title>
+<html>     
+    <!-- Etiqueta raíz que encapsula todo el contenido de una página web HTML -->
+    
+<head>         
+    <!-- Encabezado de la página. Contiene información meta, enlaces a estilos y scripts -->
+    <title>Formulario de prueba de HTML5</title>         
+    <!-- Define el título de la página que se mostrará en la pestaña del navegador -->
 </head>
-<body>
 
-<form action="" method="get">
-<p>
-Nombre: <input type="text" name="name_control" autofocus required />
-</p>
+<body>         
+    <!-- Cuerpo de la página. Todo el contenido visible de la página va aquí -->
 
-<p>
-Correo electrónico: <input type="email" name="email_control" required />
-</p>
+    <form action="" method="get">
+        <!-- Etiqueta <form> define un formulario HTML. El atributo 'action' especifica dónde se envían los datos y 'method' el tipo de envío (GET en este caso) -->
+        
+        <p>             
+            <!-- Etiqueta para definir párrafos de texto. -->
+            Nombre: 
+            <input type="text" name="name_control" autofocus required />
+            <!-- Campo de entrada de tipo texto. 'autofocus' enfoca el campo automáticamente y 'required' hace que el campo sea obligatorio -->
+        </p>
 
-<p>
-URL: <input type="url" name="url_control" placeholder="Escribe la URL de tu página web personal" />
-</p>
+        <p>
+            Correo electrónico: 
+            <input type="email" name="email_control" required />
+            <!-- Campo de entrada de tipo email. Verifica que el formato ingresado sea válido para correos electrónicos. 'required' hace que este campo sea obligatorio -->
+        </p>
 
-<p>
-Fecha: <input type="date" name="date_control" />
-</p>
+        <p>
+            URL: 
+            <input type="url" name="url_control" placeholder="Escribe la URL de tu página web personal" />
+            <!-- Campo de entrada para URLs. El atributo 'placeholder' proporciona un texto guía dentro del campo -->
+        </p>
 
-<p>
-Tiempo: <input type="time" name="time_control" />
-</p>
+        <p>
+            Fecha: 
+            <input type="date" name="date_control" />
+            <!-- Campo para seleccionar una fecha en el formato AAAA-MM-DD. Muestra un calendario en navegadores compatibles -->
+        </p>
 
-<p>
-Fecha y hora: <input type="datetime" name="datetime_control" />
-</p>
+        <p>
+            Tiempo: 
+            <input type="time" name="time_control" />
+            <!-- Campo para seleccionar una hora (formato HH:MM). Muestra un selector de tiempo en navegadores compatibles -->
+        </p>
 
-<p>
-Mes: <input type="month" name="month_control" />
-</p>
+        <p>
+            Fecha y hora: 
+            <input type="datetime" name="datetime_control" />
+            <!-- Campo para seleccionar fecha y hora. Esta etiqueta está en desuso, se recomienda usar 'datetime-local' -->
+        </p>
 
-<p>
-Semana: <input type="week" name="week_control" />
-</p>
+        <p>
+            Mes: 
+            <input type="month" name="month_control" />
+            <!-- Campo para seleccionar un mes y año (formato AAAA-MM). Muestra un selector de mes en navegadores compatibles -->
+        </p>
 
-<p>
-Número (min -10, max 10): <input type="number" name="number_control" min="-10" max="10" value="0" />
-</p>
+        <p>
+            Semana: 
+            <input type="week" name="week_control" />
+            <!-- Campo para seleccionar una semana específica en un año. Formato AAAA-WXX (semana del año) -->
+        </p>
 
-<p>
-Teléfono: <input type="tel" name="tel_control" />
-</p>
+        <p>
+            Número (min -10, max 10): 
+            <input type="number" name="number_control" min="-10" max="10" value="0" />
+            <!-- Campo de entrada numérico con un valor mínimo de -10 y máximo de 10. El valor predeterminado es 0 -->
+        </p>
 
-<p>
-Término de búsqueda: <input type="search" name="search_control" />
-</p>
+        <p>
+            Teléfono: 
+            <input type="tel" name="tel_control" />
+            <!-- Campo de entrada para números de teléfono. No valida el formato, por lo que cualquier cadena se puede ingresar -->
+        </p>
 
-<p>
-Color favorito: <input type="color" name="color_control" />
-</p>
+        <p>
+            Término de búsqueda: 
+            <input type="search" name="search_control" />
+            <!-- Campo de entrada de tipo búsqueda. Proporciona una caja de búsqueda con algunas características especiales según el navegador -->
+        </p>
 
-<p>
-<input type="submit" value="Enviar" />
-</p>
-</form>
+        <p>
+            Color favorito: 
+            <input type="color" name="color_control" />
+            <!-- Campo de entrada para seleccionar un color. Muestra un selector de color en navegadores compatibles -->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar" />
+            <!-- Botón para enviar el formulario. El valor del atributo 'value' define el texto que se mostrará en el botón -->
+        </p>
+    </form>
 </body>
 </html>
-
